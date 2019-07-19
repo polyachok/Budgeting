@@ -1,0 +1,1 @@
+INSERT INTO `Budgeting`.`Chapter` (`NAME`) VALUES ('Ремонт и текущин расходы');

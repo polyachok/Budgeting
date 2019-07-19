@@ -6,7 +6,11 @@ public class Chapter {
     private String name;
 
     public Chapter() {
-        id++;
+
+    }
+
+    public static void setId(int id) {
+        Chapter.id = id;
     }
 
     public static int getId() {
@@ -19,5 +23,10 @@ public class Chapter {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " ID: " + getId() + " NAME: " +getName() ;
     }
 }
